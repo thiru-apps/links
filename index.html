@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Thiru Links</title>
+  <title>BridgerApp</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,6 +27,7 @@
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#thiru" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#git" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Git</span></a></li>
         <li><a href="#link" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Link's</span></a></li>
       </ul>
     </nav>
@@ -46,6 +47,42 @@
 
   <main id="main">
 
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>GIT</h2>
+          <p>List of command which we are using daily routine</p>
+        </div>
+
+        <div class="row">
+          <h3>Before starting : Fork the upstream repo and make clone for local copy</h3>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <div class="row">
+              <div class="col-lg-15">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong> <span>git status</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Add:</strong> <span>git add "FILE_PATH"</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Add all:</strong> <span>git add .</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Commit:</strong> <span>git commit -m "MESSAGE"</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Push:</strong> <span>git push origin "ORIGIN_BRANCH_NAME"</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Force Push:</strong> <span>git push -f origin "ORIGIN_BRANCH_NAME"</span></li>
+                </br>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Upstream/Origin Check:</strong> <span>git remote -v</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Add Upstream:</strong> <span>git add remote upstream "REPO_URL" </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Add Origin:</strong> <span>git add remote origin "REPO_URL" </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Amend the commit:</strong> <span>git commit --amend -C HEAD</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Fetch:</strong> <span>git fetch upstream "BRANCH_NAME"</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Rebase:</strong> <span>git rebase upstream/"BRANCH_NAME"</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section id="link" class="link">
       <div class="container" data-aos="fade-up">
 
@@ -56,25 +93,26 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="link-title">DSA</h3>
+            <h3 class="link-title">Data Structure & Algorithms</h3>
             <div class="link-item pb-0">
-              <h4>Leet Code</h4>
+              <h4>Coding</h4>
               <ul>
                 <li><a href="https://github.com/walkccc/LeetCode" target="_blank">LeetCode in C++/Java/Python ( Solutions )
                 </a></li>
                 <li><a href="https://aaronice.gitbook.io/lintcode/" target="_blank">Lint Code DSA Practise Example</a></li>
+                <li><a href="https://www.ideserve.co.in/" target="_blank">Topic wise DSA Questions</a></li>
+                
               </ul>
             </div>
           </div>
           <div class="col-lg-6">
-            <h3 class="link-title">Front End</h3>
-            <div class="link-item">
+            <h3 class="link-title">Theory - Java / Python / React / JavaScript</h3>
+            <div class="link-item pb-0">
+              <h4>Learning</h4>
               <ul>
-                <li><a href="www.google.com"></a></li>
+                <li><a href="https://www.interviewbit.com/spring-interview-questions" target="_blank">Spring Interview Questions</a></li>
+                <li><a href="http://www.codespaghetti.com/java-design-pattern-interview-questions/" target="_blank">Design Pattern</a></li>
               </ul>
-            </div>
-            <div class="link-item">
-              
             </div>
           </div>
         </div>
@@ -110,5 +148,8 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/js/link.js"></script>
+  <script type="text/javascript">
+    //document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
 </body>
 </html>
