@@ -17,21 +17,68 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <h2 class="text-center mb-4">Contact Form</h2>
                 <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <!-- Two fields in the same row -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                        </div>
                     </div>
+
+                    <!-- Email field -->
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                     </div>
+
+                    <!-- Dropdown field -->
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <select class="form-select" id="country" required>
+                            <option value="" selected disabled>Select your country</option>
+                            <option value="USA">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Radio Buttons in the same line -->
+                    <div class="mb-3">
+                        <label class="form-label">Preferred Contact Method</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email" checked>
+                                <label class="form-check-label" for="contactEmail">Email</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone" value="phone">
+                                <label class="form-check-label" for="contactPhone">Phone</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checkbox field -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="subscribe">
+                        <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+                    </div>
+
+                    <!-- Message field -->
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
                     </div>
+
+                    <!-- Submit button -->
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
